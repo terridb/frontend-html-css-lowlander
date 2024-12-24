@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Nav
+        4.2 Header
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+:root {
+    --maincolor: #154734;
+    --articleblock: #A2CBBB;
+    --detailblock: #F5F5F5;
+    --lightdetail: #FFF;
+    --standardtext: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body,
+button {
+    font-family: "Source Sans 3", serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Candal", serif;
+    color: var(--maincolor);
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+body {
+    min-height: 100vh;
+    border: 2px dashed lightseagreen;
+}
+/* --------------- 4.1 Nav ------------------------- */
+.header-vacancies {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-vacancies:hover {
+    background-color: var(--detailblock);
+    cursor: pointer;
+}
+
+.vacancies-link,
+.vacancies-link:visited {
+    text-decoration: none;
+    color: var(--maincolor);
+}
+
+nav {
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+
+.inner-container {
+    border: 2px dashed yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 900px;
+    flex-shrink: 0;
+}
+
+.white-logo {
+    height: 30px;
+}
+
+.nav-main-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav-list a,
+.nav-list a:visited {
+    color: var(--lightdetail);
+    text-decoration: none;
+}
+
+.nav-icon-section {
+    display: flex;
+    flex-basis: 200px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+.language-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--lightdetail);
+    flex-basis: 80px;
+    height: 40px;
+}
+
+.language-icon {
+    height: 15px;
+}
+
+.shopping-cart-icon {
+    height: 45px;
+}
+
+/* --------------- 4.2 Header ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
