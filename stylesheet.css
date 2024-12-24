@@ -22,6 +22,12 @@
     --standardtext: #000;
 }
 
+:root {
+    --buttonradius: 7px;
+    --buttonpaddinghorizontal: 15px;
+    --buttonpaddingvertical: 15px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,12 +45,34 @@ button {
 
 h1, h2, h3, h4, h5 {
     font-family: "Candal", serif;
-    color: var(--maincolor);
 }
 
 li,
 ul {
     list-style: none;
+}
+
+h2, h3, h4, h5 {
+    color: var(--maincolor);
+}
+
+h1 {
+    color: var(--lightdetail);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+p {
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -53,7 +81,14 @@ ul {
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
-
+.inner-container {
+    border: 2px dashed yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 900px;
+    flex-shrink: 0;
+}
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
@@ -88,15 +123,6 @@ nav {
     height: 90px;
 }
 
-.inner-container {
-    border: 2px dashed yellow;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-basis: 900px;
-    flex-shrink: 0;
-}
-
 .white-logo {
     height: 30px;
 }
@@ -112,7 +138,7 @@ nav {
     gap: 35px;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.9rem;
     letter-spacing: 1px;
 }
 
@@ -148,5 +174,27 @@ nav {
 }
 
 /* --------------- 4.2 Header ------------------- */
+.homepage-header {
+    display: flex;
+    height: 800px;
+    background-image: url("/images/Lowlander_Botanical_Beers_Winter_2022_01_1.webp");
+    background-size: cover;
+    justify-content: center;
+}
 
+.homepage-header-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 360px;
+    padding: 40px;
+    color: var(--lightdetail);
+    gap: 20px;
+}
+
+.header-button {
+    width: 170px;
+    padding: var(--buttonpaddingvertical) var(--buttonpaddinghorizontal);
+    border-radius: var(--buttonradius);
+    border: none;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
